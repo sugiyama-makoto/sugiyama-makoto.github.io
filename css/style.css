@@ -235,12 +235,24 @@ nav a{
     margin-bottom: 10px;
 }
 
+.image ul .item .photo2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .image ul .item .photo img{
+    width: 100%;
+}
+.image ul .item .photo2 img{
     width: 100%;
 }
 
 .image ul li .item .txt{
     width: 100%;
+}
+
+.program p{
+    margin-bottom: 30px;
 }
 
 .program li{
