@@ -1,0 +1,74 @@
+@charset 'utf-8';
+
+*{margin: 0;padding: 0;line-height: 1;box-sizing: border-box;}
+body {
+    font-family: Arial,"Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #555;
+    letter-spacing: 0.05em;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+/* reset and initial */
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 50px;
+}
+#bg{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+h1{
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.content p.txt{
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.content p.link{
+    width: 70%;
+    margin-left: 15%;
+    height: 60px;
+}
+
+.content p.link a{
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    background-color: #57b7ce;
+    color: #fff;
+    border-radius: 10px;
+}
+.content .photo-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.content .photo{
+    width: 46%;
+}
+
+.content .photo-box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
