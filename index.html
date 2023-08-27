@@ -1,13 +1,567 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公開用リポジトリ</title>
-    <link rel="stylesheet" href="style.css">
+    <title>まとめサイト</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>公開用リポジトリ</h1>
+    <header>
+        <div class="logo">
+            <h1 id="top">Sugiyama's portfolio Site</h1>
+            <p class="digest">杉山 誠のまとめサイト</p>
+        </div>
+        <div class="main_image">
+            <ul>
+                <li><img src="img/header.jpg" alt="イメージ1"></li>
+            </ul>
+        </div>
+    </header>
+    <p id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span>MENU</span>
+    </p>
+
+    
+    <nav>
+        <ul class="container">
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#coding">CODING</a></li>
+            <li><a href="#image">IMAGE</a></li>
+            <li><a href="#program">PROGRAM</a></li>
+        </ul>
+    </nav>
+
+    <div class="main container">
+        
+        <div class="box profile">
+            <h2 id="profile">Profile</h2>
+            <div class="profile-box">
+            <img src="img/about_me.jpg" alt="自画像のディフォルメとして足の生えたオタマジャクシの画像">
+
+            <p>
+                <!-- あだ名　：　お杉<br>
+                性格　　：　温厚で落ち着きのある性格<br>
+                趣味　　：　紙に絵を描くこと<br>
+                私事　　：　<br>
+                <span>私は大学時代にプログラミングの学習をしてプログラマーをしていました。<br>
+                ただいま私は、Webデザイナーを目指し職業訓練校ﾌｪﾘｶﾃｸﾆｶﾙｱｶﾃﾞﾐｰにて5か月間学習する予定です。<br>
+                今、訓練校にて4カ月目を迎えWebｻｲﾄ制作の技術を学び、HTML、CSS、JavaScript等の言語の基礎を学習しました。<br>
+                
+                訓練はこの4ヶ月無遅刻無欠席で通い、数多くのことを学習し訓練生の方々とコミュニケーションを取らせていただき非常に良い時間を過ごさせていただきました。
+                私は、誠実に真面目に仕事に取り組める人間です。そして、学習努力のできる人間です。<br>
+                ぜひとも貴社にて、働かせていただければ幸いに思います。</span> -->
+                <!-- <table>
+                    <tr><th>あだ名　：　</th><td>お杉</td></tr>
+                    <tr><th>性格　　：　</th><td>温厚で落ち着きのある性格</td></tr>
+                    <tr><th>趣味　　：　</th><td>紙に絵を描くこと</td></tr>
+                    <tr><th>私事　　：　</th><td>　私は大学時代にプログラミングの学習をしてプログラマーをしていました。<br>
+                        　ただいま私は、Webデザイナーを目指し職業訓練校ﾌｪﾘｶﾃｸﾆｶﾙｱｶﾃﾞﾐｰにて5か月間学習する予定です。<br>
+                        　今、訓練校にて4カ月目を迎えWebｻｲﾄ制作の技術を学び、HTML、CSS、JavaScript等の言語の基礎を学習しました。<br>
+                        
+                        　訓練はこの4ヶ月無遅刻無欠席で通い、数多くのことを学習し訓練生の方々とコミュニケーションを取らせていただき非常に良い時間を過ごさせていただきました。
+                        私は、誠実に真面目に仕事に取り組める人間です。そして、学習努力のできる人間です。<br>
+                        ぜひとも貴社にて、働かせていただければ幸いに思います。</td></tr>
+                </table> -->
+                <dl>
+                    <dt>あだ名　：　</dt><dd>お杉</dd>
+                    <dt>性格　　：　</dt><dd>温厚で落ち着きのある性格</dd>
+                    <dt>趣味　　：　</dt><dd>紙に絵を描くこと</dd>
+                    <dt>私事　　：　</dt><dd>私は大学時代にプログラミングの学習をしてプログラマーをしていました。<br>
+                        私は、Webデザイナーを目指し職業訓練校ﾌｪﾘｶﾃｸﾆｶﾙｱｶﾃﾞﾐｰにて5か月間学習する予定です。<br>
+                        今、訓練校にて4カ月目を迎えWebｻｲﾄ制作の技術を学び、HTML、CSS、JavaScript等の言語の基礎を学習しました。<br>
+                        訓練はこの4ヶ月無遅刻無欠席で通い、数多くのことを学習し訓練生の方々とコミュニケーションを取らせていただき非常に良い時間を過ごさせていただきました。
+                        私は、誠実に真面目に仕事に取り組める人間です。そして、学習努力のできる人間です。<br>
+                        ぜひとも貴社にて、働かせていただければ幸いに思います。</dt>
+                    </dl>
+            </p>
+        </div>
+        </div>
+        
+        <div class="box coding">
+            <h2 id="coding">Coding</h2>
+            <ul>
+                <li>
+                    <a href="connect/connect1.html" target="_blank">
+                        <div class="item">
+                            <p class="photo"><img src="img/thum1.jpg" alt="flex-box"></p>
+                            <div class="txt">
+                                <h3>オリジナルサイト「すぎやま動物園」</h3>
+                                <p>イラストを描ける事をアピールする方法として動物園のwebｻｲﾄの制作を行っている途中です</p>     
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="connect/connect2.html" target="_blank">
+                        <div class="item">
+                            <p class="photo"><img src="img/thum2.jpg" alt="flex-box"></p>
+                            <div class="txt">
+                                <h3>習作1（企画段階からの レストランのWebサイト ランディングページ形式作成 ）</h3>
+                                <p>レストランのwebサイト</p>     
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="connect/connect3.html" target="_blank">
+                        <div class="item">
+                            <p class="photo"><img src="img/thum3.jpg" alt="flex-box"></p>
+                            <div class="txt">
+                                <h3>習作2（ responsive化の学習確認テスト ）</h3>
+                                <p>position JavaScriptを用いたハンバーガーメニュやボタンの制作、ナビゲーションのアニメーション等</p>     
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="connect/connect4.html" target="_blank">
+                        <div class="item">
+                            <p class="photo"><img src="img/thum4.jpg" alt="flex-box"></p>
+                            <div class="txt">
+                                <h3>習作4（ responsive化の学習確認テスト ）</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, asperiores.</p>     
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="connect/connect5.html" target="_blank">
+                        <div class="item">
+                            <p class="photo"><img src="img/thum5.jpg" alt="flex-box"></p>
+                            <div class="txt">
+                                <h3>習作5（ gridを使ったECサイトのレイアウトの制作 ）</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, asperiores.</p>     
+                            </div>
+                        </div>
+                    </a>  
+                </li>
+             </ul>
+        </div>
+        <div class="box image">
+            <h2 id="image">自作バナー広告</h2>
+            <ul>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/01_tropical_pineapple_banner_600x500.jpg" data-lightbox="banner" data-title="banner01"><img src="banner_img/01_tropical_pineapple_banner_600x500.jpg" alt="new year sale"></a></p>
+                        <div class="txt">
+                            <h3>杉山果樹園 トロピカル パインアップル</h3>
+                            <p>
+                                制作時間：４時間３０分<br>
+                                トロピカーナの模写です。
+                                すべての素材を自作して作ったイラストレータで制作しました。<br>
+                                まだ不慣れなため多くの時間を要してしまいました。<br>
+
+                            </p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/02_Sunscreen_SUISA_Banner_600x500.jpg" data-lightbox="banner" data-title="banner02"><img src="banner_img/02_Sunscreen_SUISA_Banner_300x250.jpg" alt="new year sale"></a></p>
+                        <div class="txt">
+                            <h3>日焼け止めSUISA</h3>
+                            <p>
+                                制作時間:3時間30分<br>
+                                アネッサの模写です。
+                                背景の海と女性の写真は色調補正でトーンカーブを上方げ白色を強めて夏の日差しを表現しました。
+                                イラストレーターで企業ロゴマークを自作し、
+                                ボトルの外枠を作りフォトショップで色を塗りました。
+
+
+                            </p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/03_Saitama_limited_capybarabeer_Banner_600x500.jpg" data-lightbox="banner" data-title="banner03"><img src="banner_img/03_Saitama_limited_capybarabeer_Banner_600x500.jpg" alt="lnew year sale"></a></p>
+                        <div class="txt">
+                            <h3>埼玉県カピバラビール</h3>
+                            <p>
+                                制作時間:4時間40分<br>
+                                「KIRINビール北海道限定」を模写しました。
+                                イラストレーターを用いて「3dとマテリアル」で缶を作り、カビパラや手、文字の作成をイラストレーターで作りました。
+                                
+                            </p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/04_Clothes_Sugiya_banner_600x500.jpg" data-lightbox="banner" data-title="banner04"><img src="banner_img/04_Clothes_Sugiya_banner_600x500.jpg" alt="new year sale"></a></p>
+                        <div class="txt">
+                            <h3>洋服のSugiya</h3>
+                            <p>
+                                制作：1時間45分<br>
+                                このバナー広告は模写なしの自作バナーです。<br>
+                                女性の写真は色調補正で露光量を挙げて女性を前に押し出すようにし、
+                                ハンガーにかかった洋服は色彩彩度で明度を挙げ女性に目が行くように、
+                                背景は楽しめにするための色黄色を選択しハーフトーンパターンで作成しました。</p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/05_lotion_Cèdre_bann_600x500.jpg" data-lightbox="banner" data-title="banner05"><img src="banner_img/05_lotion_Cèdre_bann_600x500.jpg" alt="open sale"></a></p>
+                        <div class="txt">
+                            <h3>フランス生まれの雪肌</h3>
+                            <p>制作時間:1時間40分
+                                「ELIXIR限定ﾃﾞｻﾞｲﾝ meetsドラえもん」の模写です。
+                                ドラえもんと母子の印刷がされていたものです。キャラクターの持つパブリックイメージと母子の愛情が強く、余白を多めにすることでスッキリとしたﾃﾞｻﾞｲﾝでしたが既存のキャラクターを用いらずに作るとどうしても余白が多すぎてしまい。中央部が網しいデザインになってしまうため、キャッチコピー「未来を想うケア」とロゴ「<ruby>Cèdre</ruby><rt>しぇどぉ</rt>」をジャンプアップして商品の位置を調整しました。</p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/06_SUGIN_Salty_Fruit_PLUS_banner_600x500.jpg" data-lightbox="banner" data-title="banner6"><img src="banner_img/06_SUGIN_Salty_Fruit_PLUS_banner_600x500.jpg" alt="summer_practice"></a></p>
+                        <div class="txt">
+                            <h3>SUGIN - ソルティフルーツPLUS -</h3>
+                            <p>制作時間:３時間３０分<br>
+                                自作ロゴを作成、商品名前の文字の作成、商品内のバナナ・マンゴー・ぶどう・皿に入った塩イラストの作成しました。<br>
+                                すべてイラストレータで作成するのでどうしても時間がかかってしまいました。<br>
+                            </p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/07_YMASUGI_Sandals_600x500.jpg" data-lightbox="banner" data-title="banner7"><img src="banner_img/07_YMASUGI_Sandals_600x500.jpg" alt="trace1"></a></p>
+                        <div class="txt">
+                            <h3>YMASUGI_サンダル」</h3>
+                            <p>
+                                制作時間:2時間20分<br>
+                                「BIRKENSTOCKのサンダルの広告」の模写です。<br>
+                                オリジナルロゴと足の裏のロゴマークを作り、サンダルに印字されている様に見えるようソフトライトで付けました。<br>
+                                フィルターの虹彩絞りぼかしを行い焦点外をぼかしを行うことで人やヤシの木パラソルがミニチュアの様に見えるようにしました。<br>
+
+                            </p>     
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <p class="photo"><a href="banner_img/tour.jpg" data-lightbox="banner" data-title="banner7"><img src="banner_img/tour.jpg" alt="tour"></a></p>
+                        <div class="txt">
+                            <h3>banner8</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, asperiores.</p>     
+                        </div>
+                    </div>
+                </li>
+
+            </ul>           
+        </div>
+        <div class="box program">
+            <h2 id="program">Program</h2>
+            <p>
+                ここで表示されている
+                ハンバーガーボタンには決まりがなく、たまたまハンバーガに見えるということからハンバーガーボタンという名がついた事を聞き、自作することを思いつき自作した作品です。<br>
+                また、職業訓練中に作成したcssアニメーションも載せております。
+
+            </p>
+            
+            <ul>
+                
+                <li>
+                    <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="abQqajV" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/abQqajV">
+                        Sugiyama CSS hamburger button shop 05_Teaching materials</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                      <p>
+                        <span>自作のハンバーガボタン：カラーボールさん</span><br>
+                        <br>
+                        -----このハンバーガーボタンの作成目的----- <br>
+                        このハンバーガーボタンは他のハンバーガボタンを見ていただいた訓練生さんから作り方を教えて欲しいと頼まれて教材用に作ったものです。<br>
+                        教材用なので時間により区切りながら教えられるように5章に分け作成しました。<br>
+                        文章はhtmlに1~2章cssに3~5章をコメントアウトし書きました。<br>
+                        <br>
+                        -----解説----- <br>
+                        行動心理学から人は3秒で第一印象を持つ生き物なのでハンバーガーボタンのアニメーションを見た人が判断する3秒でループするようにしてあります。それは初めてボタンを見た人に興味を持ってもらう時間として最適と考えたからです。また、教材用なのでクリック前クリック後のホバーは儲けませんでした。<br>
+
+
+                      </p>
+ 
+ 
+                      
+                </li>
+                <li>
+                    <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="QWJQrNe" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/QWJQrNe">
+                        Sugiyama CSS hamburger button shop 04_French fries or Chips</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                      <p>
+                        コードペンをポートフォリオ用に小さな窓で張り付けているため、メディクエリが動いてしまいホバーが利かなくなるので、メディクエリをコメントアウトしています。<br>
+                        本来スマートフォンの時ホバーを切るのですが。、それを止めてスマートフォンのホバー取り除きをコメント化し止めています
+                      </p>
+
+                </li>
+                <li>
+                    <p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="ExOQLKZ" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/ExOQLKZ">
+                        Sugiyama CSS hamburger button shop 03_Drink</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+                <li>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOQvzaB" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/gOQvzaB">
+                        Sugiyama CSS hamburger button shop 02_Burger</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+                <li>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="wvQyjaN" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/wvQyjaN">
+                        Sugiyama CSS hamburger button shop 01_Burger</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+                <li>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNQYjZz" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/oNQYjZz">
+                        テキストループアニメ</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+                <li>
+                    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="eYQBpza" data-preview="true" data-user="sugiyama888" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/sugiyama888/pen/eYQBpza">
+                        テキストアニメーション</a> by 杉山 (<a href="https://codepen.io/sugiyama888">@sugiyama888</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="box linestamp">
+            <h2>過去に制作・販売したラインスタンプ作品です</h2>
+            <p>私は過去にアニメーションラインスタンプを制作・販売したことがあります。<br>
+               当時の制作時の思考を少し書かせていただきたく思います。<br>
+               感情・感想・推察が入るため拙い文章になる事を恐縮ですが、ご容赦ください。<br><br><br>
+               私は、当時人と関わりを持たないでお金が稼ぎたいと思いラインスタンプの制作を始めました。<br>
+               ラインスタンプといえばかわいい系スタンプ、さらに普通のラインスタンプよりアニメーションラインスタンプの方が売れるのではないかと考え、カエルのキャラクター「カエルのエル」を自作し動かせるものができるか試験的に作り始めました。<br><br>
+            </p>
+
+            <p>当時制作した「カエルのエル」</p><br>
+            <img src="img/line_01.gif" alt="「カエルのエル」ラインスタンプ01">
+            <img src="img/line_02.gif" alt="「カエルのエル」ラインスタンプ02">
+
+            <p>
+               試作品を２つほど完成したところで市場調査し、すでに何十万以上のかわいい系作品が存在していることを知りました。<br>
+               私は、「素晴らしい作品が常に生み出される中、分母も非常に大きいかわいい系では新規参入しても埋もれる」と理解しました。<br>
+               そこで、ニッチな分野で作るべきと思考し、人の欲望の何かを刺激するものが良いのではと考えました。<br>
+               「人は、常に恐怖に対する欲求があり、故にホラー映画が流行る」という話を思い出し、ホラースタンプの作成に方針を変えました。<br>
+               ホラー系の市場調査をした所、幽霊系のスタンプもそこそこ存在しため排除し、「心霊より人が怖い」という考えが世間一般的にも認知されていたので「ヒトコワ<span>注1</span>」のジャンルから調査したところ非常に作品数が少なかったため、そこに目を付けました。<br>
+               私は市場独占を考え「ヒトコワ」のジャンルから更にニッチな「ヤンデレ<span>注2</span>」ジャンルを選び３～４カ月ほどで完成させました。<br>
+               googleにて「ヤンデレ　スタンプ　赤羽」と検索すると一番始めに出てくる検索結果が制作したスタンプです。<br><br>
+               <span>注1</span>　：　「ヒトコワ」とは、人間の持つ狂気や残酷さ、異常性などから生じる恐怖をテーマとした作品やジャンルの事です。<br>
+               <span>注2</span>　：　「ヤンデレ」とは、恋愛対象に異常な執着心を持ち対象を失う事への恐怖等から、暴力的な行為に走る人の事です。<br><br>
+            </p>
+
+               <p>当時制作したヤンデレスタンプ</p><br>
+
+
+               <dl>
+                <dt>タイトル　　　　：　</dt>
+                <dd>男子に一目置かれるかもヤンデレスタンプ</dd>
+                <dt>キャッチコピー　：　</dt>
+                <dd>気になる男子と上手くコミュニケーションが取れない、そんな時はこのヤンデレスタンプをお使いください。 気になる男子に『ひぇっ！！』と一目置かれる事間違いないです。</dd>
+               </dl>
+               <p>画像をクリックして頂くとアニメーションがモーダルにて再生されます。</p>
+
+                <ul>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/01.webp" data-lightbox="line" data-title="ラインスタンプ_01"><img src="line_img/01.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/02.webp" data-lightbox="line" data-title="ラインスタンプ_02"><img src="line_img/02.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/03.webp" data-lightbox="line" data-title="ラインスタンプ_03"><img src="line_img/03.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/04.webp" data-lightbox="line" data-title="ラインスタンプ_04"><img src="line_img/04.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/05.webp" data-lightbox="line" data-title="ラインスタンプ_05"><img src="line_img/05.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/06.webp" data-lightbox="line" data-title="ラインスタンプ_06"><img src="line_img/06.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/07.webp" data-lightbox="line" data-title="ラインスタンプ_07"><img src="line_img/07.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/08.webp" data-lightbox="line" data-title="ラインスタンプ_08"><img src="line_img/08.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/09.webp" data-lightbox="line" data-title="ラインスタンプ_09"><img src="line_img/09.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/10.webp" data-lightbox="line" data-title="ラインスタンプ_10"><img src="line_img/10.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/11.webp" data-lightbox="line" data-title="ラインスタンプ_11"><img src="line_img/11.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/12.webp" data-lightbox="line" data-title="ラインスタンプ_12"><img src="line_img/12.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/13.webp" data-lightbox="line" data-title="ラインスタンプ_13"><img src="line_img/13.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/14.webp" data-lightbox="line" data-title="ラインスタンプ_14"><img src="line_img/14.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/15.webp" data-lightbox="line" data-title="ラインスタンプ_15"><img src="line_img/15.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/16.webp" data-lightbox="line" data-title="ラインスタンプ_16"><img src="line_img/16.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/17.webp" data-lightbox="line" data-title="ラインスタンプ_17"><img src="line_img/17.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/18.webp" data-lightbox="line" data-title="ラインスタンプ_18"><img src="line_img/18.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/19.webp" data-lightbox="line" data-title="ラインスタンプ_19"><img src="line_img/19.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/20.webp" data-lightbox="line" data-title="ラインスタンプ_20"><img src="line_img/20.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/21.webp" data-lightbox="line" data-title="ラインスタンプ_21"><img src="line_img/21.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/22.webp" data-lightbox="line" data-title="ラインスタンプ_22"><img src="line_img/22.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/23.webp" data-lightbox="line" data-title="ラインスタンプ_23"><img src="line_img/23.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="line_box">
+                            <p class="photo"><a href="line_img/24.webp" data-lightbox="line" data-title="ラインスタンプ_24"><img src="line_img/24.png" alt="ラインスタンプの画像"></a></p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+               <p>
+                敗因はニッチなジャンルから更にニッチすぎるジャンルへシフトし過ぎたい。
+                それだけ、求める人が多いからだという事を念頭に置いていなかったこ事にあると考えました。
+
+               </p>
+
+
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Digest-Web-Site</p>
+    </footer>   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script>
+    $(function(){
+
+        $('header .main_image ul').bxSlider({
+            auto:true,
+            mode:'fade',
+            pager:false,
+            controls:false,
+            seeed:3000,
+            pause:6000,
+
+        });
+
+
+        lightbox.option({
+        'fadeDuration': 200,
+        'wrapAround': true
+        })
+
+
+        $('#burger').on('click',function(){
+            $(this).toggleClass('active');
+            $('nav').fadeToggle();
+        });
+
+        $('nav a').on('click',function(){
+            $('#burger').toggleClass('active');
+            $('nav').fadeToggle();
+        })
+
+
+    });
+</script>
+
 
 </body>
 </html>
