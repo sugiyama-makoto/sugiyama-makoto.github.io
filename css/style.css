@@ -112,6 +112,12 @@ nav a{
     line-height: 1.4;
     margin-bottom: 10px;
 }
+/*------------------------ 
+    スキルシート skill   
+------------------------*/
+.skill{
+    margin-bottom: 50px;
+}
 /*------------------------
     burger menu setting
 ------------------------*/
@@ -252,11 +258,11 @@ nav a{
 }
 
 .program p{
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .program li{
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .program li p:last-child{
