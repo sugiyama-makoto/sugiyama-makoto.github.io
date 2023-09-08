@@ -92,14 +92,7 @@ nav a{
     display: flex;
 
 }
-@media (max-width:768px){
-    .profile{
-        text-align: center;
-        }
-    .profile-box{
-        display: block;
-}
-}
+
 .profile dl{
     display: flex;
     flex-wrap: wrap;
@@ -371,7 +364,13 @@ footer>p{
         padding:0 0 8px 0;
 
     }
-
+    .profile{
+        text-align: center;
+    }
+            
+    .profile-box{
+        display: block;
+    }
 
     .main{
         padding: 0 5px;
