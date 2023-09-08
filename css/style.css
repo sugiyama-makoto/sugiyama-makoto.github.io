@@ -70,7 +70,11 @@ nav{
     width: 100%;
     height: 100%;
     padding-top: 100px;
+<<<<<<< HEAD
     background: #86cede;
+=======
+    background-color: rgba(255, 0, 0);
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     display: none;
     z-index: 2;
     
@@ -123,20 +127,33 @@ nav a{
 ------------------------*/
 
 #burger {
+<<<<<<< HEAD
     width: 100px;
     height: 100px;
+=======
+    width: 60px;
+    height: 60px;
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     position: fixed;
     top: 15px;
     right: 20px;
     cursor: pointer;
+<<<<<<< HEAD
     background-color: #e0e0c2;
     border-radius: 50%;
     border: #9b9b84 solid  2px;
+=======
+    background-color: #f00;
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     z-index: 3;
 
   }
   
+<<<<<<< HEAD
 /* #burger span {
+=======
+#burger span {
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     position: absolute;
     width: 80%;
     height: 3px;
@@ -146,9 +163,15 @@ nav a{
     margin: auto;
     transition: .3s;
     
+<<<<<<< HEAD
 } */
 
 /* #burger span:nth-child(1) {
+=======
+}
+
+#burger span:nth-child(1) {
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     top: -30%;
 }
 
@@ -162,17 +185,29 @@ nav a{
     font-size: 10px;
     height: 0;
     color: #fff;
+<<<<<<< HEAD
   } */
 
 
   
   /* #burger.active  span:nth-child(1) {
+=======
+  }
+
+
+  
+  #burger.active  span:nth-child(1) {
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
     top: 20%;
   }
   
   #burger.active  span:nth-child(3) {
       top: -20%;
+<<<<<<< HEAD
   } */
+=======
+  }
+>>>>>>> ce167fc07943239a5dc5064ee4029f8b1b88baa7
   
 
 .container{
