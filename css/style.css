@@ -344,14 +344,14 @@ footer>p{
     text-align: center;
     line-height: 250px;
 }
-@media (max-width: 768){
+/* @media (max-width: 768){
     .profile{
         text-align: center;
     }
     .profile-box{
         display: block;
     }
-    }
+    } */
 
 @media screen and (min-width:768px) {
 
