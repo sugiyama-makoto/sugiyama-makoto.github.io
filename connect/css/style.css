@@ -28,17 +28,15 @@ img{
 #bg{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: none;
 }
-
 h1{
     line-height: 50px;
     text-align: center;
     font-size: 25px;
     margin-bottom: 40px;
 }
-
 .content p.txt{
     line-height: 1.7;
     margin-bottom: 20px;
