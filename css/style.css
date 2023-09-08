@@ -5,6 +5,7 @@ body {
 font-family: Arial,"Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 color: #555;
 letter-spacing: 0.05em;
+/* background-image: linear-gradient(#eafbff,#86cede); */
 }
 
 li {
