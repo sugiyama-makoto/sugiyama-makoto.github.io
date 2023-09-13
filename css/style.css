@@ -224,6 +224,20 @@ nav a{
 .image ul li .item .txt{
     width: 100%;
 }
+/* pattern　パターン */
+.pattern>p{
+    margin: 10px 0 30px;
+}
+.pattern-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pattern-box p {
+    margin-bottom: 30px;
+    width: 30%;
+}
+
 /* program */
 .program p{
     margin-bottom: 30px;
