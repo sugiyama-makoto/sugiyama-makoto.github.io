@@ -17,6 +17,7 @@ header{
         background: url(../img/header-gif.gif) no-repeat center center/cover;
         -webkit-background-clip: text;
         color: transparent;
+        
     }
 }
 footer{
