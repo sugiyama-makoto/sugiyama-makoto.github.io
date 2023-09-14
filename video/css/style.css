@@ -7,7 +7,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f8;
+    /* background-color: #0f8; */
+    background: linear-gradient(#0f8,#00aeff) ;
     >h1{
         font-family: 'Merienda', cursive;
         /* 10vw とは幅の1/10の意味 フルードこれだけで行けると思いこみやすいがあくまで適当に使うもの*/
