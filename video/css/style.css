@@ -12,12 +12,12 @@ header{
         font-family: 'Merienda', cursive;
         /* 10vw とは幅の1/10の意味 フルードこれだけで行けると思いこみやすいがあくまで適当に使うもの*/
         /* max-widthの様なものを使わないと際限なく大きくなったり小さくなったりしてしまう */
-        font-size: 5vw;
+        font-size: 10vw;
         letter-spacing: 0.1em;
         background: url(../img/header-gif.gif) no-repeat center center/cover;
         -webkit-background-clip: text;
         color: transparent;
-        
+
     }
 }
 footer{
