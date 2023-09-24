@@ -265,6 +265,35 @@ h3{
 .after_effects p{
     margin: 10px 0 30px;
 }
+.after_ani a:first-of-type img{
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+}
+.after_ani a{
+    width: 80%;
+    /* margin: 0 auto; */
+}
+.after_ani03{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.after_ani01,.after_ani02{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.after_ani01 a{
+    width: 350px;    
+}
+.after_ani03 img{
+    max-width: 250px;
+}
+*{outline:  #f00 1px solid;}
 /*
  line stamp 
  */
