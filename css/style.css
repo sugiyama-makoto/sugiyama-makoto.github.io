@@ -265,6 +265,16 @@ h3{
 .after_effects p{
     margin: 10px 0 30px;
 }
+
+.after_effects img{
+    padding: 5px;
+    background-color: #ddd;
+    box-shadow: inset 0 0 5px 5px #fff;
+    margin-bottom: 10px;
+}
+.after_ani{
+    margin-bottom: 50px;
+}
 .after_ani a:first-of-type img{
     margin: 0 auto;
     display: flex;
@@ -272,7 +282,6 @@ h3{
 }
 .after_ani a{
     width: 80%;
-    /* margin: 0 auto; */
 }
 .after_ani03{
     display: flex;
@@ -292,8 +301,11 @@ h3{
 }
 .after_ani03 img{
     max-width: 250px;
+    margin-bottom: 10px;
 }
-*{outline:  #f00 1px solid;}
+.after_box{
+    margin-bottom: 50px;
+}
 /*
  line stamp 
  */
