@@ -224,6 +224,19 @@ nav a{
 .image ul li .item .txt{
     width: 100%;
 }
+/* 企業別応募用バナーデザイン　ポートフォリオ　pdf */
+.item02-main p{
+    margin-bottom: 50px;
+}
+.item02{
+    width: 100%;
+}
+.item02 a img{
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+
 /* pattern　パターン */
 .pattern>p{
     margin: 10px 0 30px;
