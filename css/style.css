@@ -236,7 +236,15 @@ nav a{
     display: flex;
     margin: 0 auto;
 }
-
+.item02 ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.item02 ul li{
+    width: 48%;
+}
 /* pattern　パターン */
 .pattern>p{
     margin: 10px 0 30px;
