@@ -47,43 +47,43 @@ header p{
     height: 100px;
 }
 header p span:nth-of-type(1){
-    animation: txt-anime 0.2s 0s forwards;
+    animation: txt-anime 0.2s 4.31s forwards;
 }
 header p span:nth-of-type(2){
-    animation: txt-anime 0.2s 0.1s forwards;
+    animation: txt-anime 0.2s 4.41s forwards;
 }
 header p span:nth-of-type(3){
-    animation: txt-anime 0.2s 0.2s forwards;
+    animation: txt-anime 0.2s 4.51s forwards;
 }
 header p span:nth-of-type(4){
-    animation: txt-anime 0.2s 0.3s forwards;
+    animation: txt-anime 0.2s 4.61s forwards;
 }
 header p span:nth-of-type(5){
-    animation: txt-anime 0.2s 0.4s forwards;
+    animation: txt-anime 0.2s 4.71s forwards;
 }
 header p span:nth-of-type(6){
-    animation: txt-anime 0.2s 0.5s forwards;
+    animation: txt-anime 0.2s 4.81s forwards;
 }
 header p span:nth-of-type(7){
-    animation: txt-anime 0.2s 0.3s forwards;
+    animation: txt-anime 0.2s 4.91s forwards;
 }
 header p span:nth-of-type(8){
-    animation: txt-anime 0.2s 0.35s forwards;
+    animation: txt-anime 0.2s 4.96s forwards;
 }
 header p span:nth-of-type(9){
-    animation: txt-anime 0.2s 0.4s forwards;
+    animation: txt-anime 0.2s 5.01s forwards;
 }
 header p span:nth-of-type(10){
-    animation: txt-anime 0.2s 0.45s forwards;
+    animation: txt-anime 0.2s 5.06s forwards;
 }
 header p span:nth-of-type(11){
-    animation: txt-anime 0.2s 0.5s forwards;
+    animation: txt-anime 0.2s 5.11s forwards;
 }
 header p span:nth-of-type(12){
-    animation: txt-anime 0.2s 0.55s forwards;
+    animation: txt-anime 0.2s 5.16s forwards;
 }
 header p span:nth-of-type(13){
-    animation: txt-anime 0.2s 0.6s forwards;
+    animation: txt-anime 0.2s 5.21s forwards;
 }
 
 
@@ -795,20 +795,107 @@ nav ul li a{
 }
 
 /* footer　フッター */
-footer{
+/* footer .footer-box{
     width: 100%;
     height: 200px;
     display: flex;
     align-items: center;
     line-height: 200px;
     background-color:var(--color04);
+} */
+footer{
+    width: 100%;
+    padding: 40px 20px;
+background-color: var(--color04);
 }
 footer p{
+    text-align: center;
     font-size: 25px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+
+}
+footer .sns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer .sns li{
+    margin-right: 30px;
+}
+footer .sns li a{
+    transition: 0.3s;
 }
 
+footer .sns li:nth-of-type(1) a{
+    font-size: 44px;
+    background: url(../img/x-twitter.svg) no-repeat;
+}
+footer .sns li:nth-of-type(2) a{
+    font-size: 44px;
+    background: url(../img/instagram.svg) no-repeat;
+}
+footer .sns li:nth-of-type(3) a{
+    font-size: 44px;
+    background: url(../img/tiktok.svg) no-repeat;
+}
+footer .sns li:nth-of-type(1) a:hover{
+    background: url(../img/x-twitter02.svg) no-repeat;
+}
 
+footer .sns li:nth-of-type(2) a:hover{
+    background: url(../img/instagram02.svg) no-repeat;
+}
+
+footer .sns li:nth-of-type(3) a:hover{
+    background: url(../img/tiktok02.svg) no-repeat;
+}
+
+/* オープニング */
+#curtain{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#ffa3ff 20%,#fff 30%, #ffff91 70%,#fff 80%,#ffa3ff 100%);
+    z-index: 100;
+}
+#layer02 path{
+    fill:none;
+    stroke:#fff;
+    stroke-width: 14px;
+    stroke-dasharray: 2000px;
+    stroke-dashoffset: 2000px;
+    animation:op-text 3.5s 0.3s linear  forwards; 
+}
+@keyframes op-text{
+    0%{stroke-dashoffset:2000px;}
+    60%{stroke-dashoffset: 0;}
+    100%{stroke-dashoffset: 0;}
+}
+#layer01{
+    mask: url(#layer02-mask);
+    fill:var(--color01);
+}
+.op-logo{
+    position: absolute;
+    inset: 0;
+    margin: 30vh auto;
+    max-width: 800px;          
+    /* margin: auto; */
+    animation:op-text02 3.5s 0.3s linear  forwards; 
+}
+@keyframes op-text02{
+    0%{transform:scale(1,1);}
+    60%{transform:scale(1,1);}
+    70%{transform:scale(0.7,1.3);}
+    75%{transform:scale(1,1);}
+    78%{transform:scale(0.8,1.2);}
+    81%{transform:scale(1,1);}
+    83%{transform:scale(0.9,1.1);}
+    85%{transform:scale(1,1);}
+    100%{transform:scale(1,1);}
+}
 
 
 
