@@ -125,7 +125,7 @@ header p span:nth-of-type(13){
     transform: scale(110%);
     object-fit: cover;
     /* background-color: #f0f; */
-    background: url(../img/header01_.png) no-repeat center center/cover;
+    background: url(../img/header01_.webp) no-repeat center center/cover;
     z-index: -1;
 }
 #hero2{
@@ -183,7 +183,7 @@ header p span:nth-of-type(13){
     height: 100vh;
     transform: scale(110%);
     object-fit: cover;
-    background: url(../img/header02_.png) no-repeat center center/cover;
+    background: url(../img/header02_.webp) no-repeat center center/cover;
     z-index: 3;
 }
 
